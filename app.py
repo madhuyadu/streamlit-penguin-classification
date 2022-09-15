@@ -32,20 +32,20 @@ if uploaded_file is not None:
 else:
 
     def user_input_features():
-        st.subheader('Feature 1')
+        st.sidebar.subheader('Feature 1')
         island = st.sidebar.selectbox('Island',
                                       ('Biscoe', 'Dream', 'Torgersen'))
-        st.subheader('Feature 2')
+        st.sidebar.subheader('Feature 2')
         sex = st.sidebar.selectbox('Sex', ('male', 'female'))
-        st.subheader('Feature 3')
+        st.sidebar.subheader('Feature 3')
         bill_length_mm = st.sidebar.slider('Bill length (mm)', 32.1, 59.6,
                                            43.9)
-        st.subheader('Feature 4')
+        st.sidebar.subheader('Feature 4')
         bill_depth_mm = st.sidebar.slider('Bill depth (mm)', 13.1, 21.5, 17.2)
-        st.subheader('Feature 5')
+        st.sidebar.subheader('Feature 5')
         flipper_length_mm = st.sidebar.slider('Flipper length (mm)', 172.0,
                                               231.0, 201.0)
-        st.subheader('Feature 6')
+        st.sidebar.subheader('Feature 6')
         body_mass_g = st.sidebar.slider('Body mass (g)', 2700.0, 6300.0,
                                         4207.0)
         data = {
