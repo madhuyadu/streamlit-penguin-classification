@@ -10,10 +10,20 @@ a. Prediction class, which tells the class to which Penguin belongs is displayed
 3. The input features fed to the model (via either way) is also displayed in the tabular form in the main page
 
 # Screenshots of the App
-![image](https://user-images.githubusercontent.com/56335301/190416768-2766529a-f6f9-456b-9625-78aa4ce1bdef.png)
-![image](https://user-images.githubusercontent.com/56335301/190416832-39c5ab5a-1dbb-46b2-adcc-988920e9969f.png)
-![image](https://user-images.githubusercontent.com/56335301/190416891-6dff7561-fe20-4faa-b6ab-8c0208311143.png)
-![image](https://user-images.githubusercontent.com/56335301/190416959-d08b6f5f-ce81-4caa-86ba-e4bb785ac414.png)
+**Main page**
+![image](https://user-images.githubusercontent.com/56335301/190420096-e5d839b1-f773-496b-90cc-cea03c12e5b9.png)
+![image](https://user-images.githubusercontent.com/56335301/190420173-45814462-7225-4542-b83e-4e118b5bfab3.png)
+
+**Sidebar**
+![image](https://user-images.githubusercontent.com/56335301/190420267-27c3b371-54ba-426f-98ec-4262ac3a9e56.png)
+![image](https://user-images.githubusercontent.com/56335301/190420384-f5921a4a-419b-42e3-8446-87d1713d55fc.png)
+![image](https://user-images.githubusercontent.com/56335301/190420458-3933014b-611c-4510-99be-5f420bfb0d9c.png)
+
+**whole page view**
+![image](https://user-images.githubusercontent.com/56335301/190420599-9b8293f9-5590-476d-ac6c-c34ed145f0cd.png)
+![image](https://user-images.githubusercontent.com/56335301/190420685-6842acec-5530-42fe-bb68-f934a292f825.png)
+
+
 
 # Credits
 This web app is created based on tutorial on youtube channel "dataprofessor"
