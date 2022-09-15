@@ -24,22 +24,28 @@ uploaded_file = st.sidebar.file_uploader("Upload your input CSV file",
 
 # 1st way: user input in the form of file uploaded
 if uploaded_file is not None:
-    input_df = pd.read_csv(
-        uploaded_file
-    ).drop(columns=['species'])  # this is used for prediction (contains multiple rows of data
+    input_df = pd.read_csv(uploaded_file).drop(columns=[
+        'species'
+    ])  # this is used for prediction (contains multiple rows of data
 
 # 2nd way: user input in the form of selectable features on the slider bar --ANY 1 WAY IS POSSIBLE
 else:
 
     def user_input_features():
+        st.subheader('Feature 1')
         island = st.sidebar.selectbox('Island',
                                       ('Biscoe', 'Dream', 'Torgersen'))
+        st.subheader('Feature 2')
         sex = st.sidebar.selectbox('Sex', ('male', 'female'))
+        st.subheader('Feature 3')
         bill_length_mm = st.sidebar.slider('Bill length (mm)', 32.1, 59.6,
                                            43.9)
+        st.subheader('Feature 4')
         bill_depth_mm = st.sidebar.slider('Bill depth (mm)', 13.1, 21.5, 17.2)
+        st.subheader('Feature 5')
         flipper_length_mm = st.sidebar.slider('Flipper length (mm)', 172.0,
                                               231.0, 201.0)
+        st.subheader('Feature 6')
         body_mass_g = st.sidebar.slider('Body mass (g)', 2700.0, 6300.0,
                                         4207.0)
         data = {
@@ -57,8 +63,8 @@ else:
 
 # Combines user input features with entire penguins dataset
 # This will be useful for the encoding phase
-penguins_raw = pd.read_csv('penguins_cleaned.csv').drop(columns=['species']) 
-penguins = penguins_raw #.drop(columns=['species'])
+penguins_raw = pd.read_csv('penguins_cleaned.csv').drop(columns=['species'])
+penguins = penguins_raw  #.drop(columns=['species'])
 df = pd.concat([input_df, penguins], axis=0)
 
 # Encoding of categorical features
@@ -68,7 +74,6 @@ for col in encode:
     df = pd.concat([df, dummy], axis=1)
     del df[col]
 df = df[:1]  # Selects only the first row (the user input data)
-
 
 # Displays the user input features
 st.subheader('User Input features')
@@ -92,7 +97,7 @@ prediction_proba = load_clf.predict_proba(df)  #class probability
 
 #--------DISPLAY RESULTS-----------#
 st.subheader('Prediction')
-penguins_species = np.array(['Adelie','Chinstrap','Gentoo']) 
+penguins_species = np.array(['Adelie', 'Chinstrap', 'Gentoo'])
 
 #print(prediction)
 st.write(penguins_species[prediction])
