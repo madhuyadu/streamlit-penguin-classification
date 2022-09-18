@@ -34,4 +34,5 @@ a. Prediction class, which tells the class to which Penguin belongs is displayed
 This web app is created based on tutorial on youtube channel "dataprofessor"
 
 # NOTE: 
-The web app was developed on Anaconda navigator as replit faced issues related to streamlit, pandas, python, numpy library versions
+1. The web app was developed on Anaconda navigator as replit faced issues related to streamlit, pandas, python, numpy library versions
+2. The example CSV input file (the hyperlink, which can be seen on the left side pane) is available @ https://raw.githubusercontent.com/dataprofessor/data/master/penguins_example.csv, and not present in the repository
