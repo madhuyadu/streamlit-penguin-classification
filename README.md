@@ -50,11 +50,11 @@ Before proceeding with below steps, ensure following
 ![image](https://user-images.githubusercontent.com/56335301/190914132-785c44ee-16fe-4582-825c-e9f7c51ddb16.png)
 
 4. Execute below git commands
-$ git init 
-$ git add .
-$ git commit -m "commit message"
-$ git branch -M main
-$ git push heroku main
+$ git init </br>
+$ git add . </br>
+$ git commit -m "commit message" </br>
+$ git branch -M main </br>
+$ git push heroku main </br>
 
 ![image](https://user-images.githubusercontent.com/56335301/190914155-2a917fd3-d80e-4803-9311-cd073ed74390.png)
 ![image](https://user-images.githubusercontent.com/56335301/190914210-f9907645-7e38-4fc1-8fff-6c5787c7076e.png)
@@ -64,6 +64,39 @@ $ git push heroku main
 
 6. Check for the message:  Procfile declares types -> web, to avoid the error "Application error" when app is successfully deployed
 ![image](https://user-images.githubusercontent.com/56335301/190914270-0dfaff0d-34e2-4b21-bafd-747df9c614de.png)
+
+7. App successfully deployed on Heroku
+![image](https://user-images.githubusercontent.com/56335301/190914730-0fcaee82-bf29-4404-a4ec-56067d9e09aa.png)
+
+
+# Screenshots showing app deployment on Heroku - via Heroku GUI
+1. Go to the option "Create the App", give a name for the app. Click the button "Create app"
+![image](https://user-images.githubusercontent.com/56335301/190914808-675d9cae-e8b4-4d22-8b86-37c22cd08bd2.png)
+
+2. Select Github as Deployment method
+![image](https://user-images.githubusercontent.com/56335301/190914875-466e1e17-459e-4917-be85-a4b59d87480b.png)
+
+3. Search for github repo name & click Connect
+![image](https://user-images.githubusercontent.com/56335301/190914910-acf0461c-86b1-478c-8874-4b1887ae3725.png)
+
+4. You can also enable Automatic deployment as below
+![image](https://user-images.githubusercontent.com/56335301/190914931-109ebbc1-71c4-424c-8c7a-ddd2558f99fd.png)
+
+5. Manually deploy the app as below & ensure all steps are completed successfully
+![image](https://user-images.githubusercontent.com/56335301/190914981-324a2014-6bea-476f-8820-3a180181fdf5.png)
+![image](https://user-images.githubusercontent.com/56335301/190915002-b7451f5a-b28d-4cfe-a7df-3f334168e38d.png)
+
+6. Check for below message to ensure successful deployment of app
+![image](https://user-images.githubusercontent.com/56335301/190915043-61ffff8d-36d5-4e8f-9835-1f514cfd4944.png)
+
+7. You can also check status of app like below
+![image](https://user-images.githubusercontent.com/56335301/190915077-dd5a2859-1c71-487c-a59d-8bb868932118.png)
+
+8. App can also be accessed under Settings option
+![image](https://user-images.githubusercontent.com/56335301/190915117-564801c0-5bbb-414f-b963-8c5b3d401607.png)
+
+9. Successfully deployed app
+![image](https://user-images.githubusercontent.com/56335301/190915141-7fd225af-c947-4aa1-82c9-fc675cdab16c.png)
 
 
 
@@ -77,8 +110,8 @@ Using the setup.sh and Procfile files, you can tell Heroku the needed commands f
 In the setup.sh file, we will create a streamlit folder with a credentials.toml and a config.toml file.( pls refer setup.sh file inside this repo for content) </br>
 The Procfile is used to execute the setup.sh and then call streamlit run to run the application. </br>
 
-- Procfile --> (shouldnt contain any extension)
-- setup.sh --> (should contain extension .sh)
+- Procfile --> shouldnt contain any extension
+- setup.sh --> should contain extension .sh
 - requirements.txt --> contains all dependencies along with version info.</br> The requirements.txt file contains all the libraries that need to be installed for the project to work. </br> This file can be created manually by going through all files and looking at what libraries are used or </br> automatically using something like pipreqs. </br>
 pipreqs ./  --> SYNTAX to be used in cmd
 
