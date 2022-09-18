@@ -33,5 +33,5 @@ a. Prediction class, which tells the class to which Penguin belongs is displayed
 # Credits
 This web app is created based on tutorial on youtube channel "dataprofessor"
 
-#NOTE: 
-The web app was developed on Anaconda navigator as replit faces issues related to streamlit, pandas, python, numpy library versions
+# NOTE: 
+The web app was developed on Anaconda navigator as replit faced issues related to streamlit, pandas, python, numpy library versions
