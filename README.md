@@ -31,9 +31,6 @@ a. Prediction class, which tells the class to which Penguin belongs is displayed
 
 
 
-# Credits
-This web app is created based on tutorial on youtube channel "dataprofessor"
-
 # Screenshots showing app deployment on Heroku - via Heroku CLI
 Before proceeding with below steps, ensure following
 * Heroku CLI is installed on local
@@ -117,3 +114,7 @@ pipreqs ./  --> SYNTAX to be used in cmd
 
 - README.txt 
 - any other supporting files such as input file, model.pkl file & so on
+
+
+# Credits
+This web app is created based on tutorial on youtube channel "dataprofessor"
